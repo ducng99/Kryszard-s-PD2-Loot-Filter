@@ -12,7 +12,7 @@ ItemDisplay[GOLD<1000 (CLVL>17 AND CLVL<80)]:
 ItemDisplay[GOLD<5000 CLVL>79]:
 
 //Show me that item is etheral
-ItemDisplay[ETH UNI]: %GRAY%[%WHITE%eth%GRAY%] %%RED%%%NAME%%CONTINUE%
+ItemDisplay[ETH UNI]: %GRAY%[%WHITE%eth%GRAY%] %RED%%NAME%%CONTINUE%
 ItemDisplay[ETH RARE]: %GRAY%[%WHITE%eth%GRAY%] %YELLOW%%NAME%%CONTINUE%
 ItemDisplay[ETH MAG]: %GRAY%[%WHITE%eth%GRAY%] %BLUE%%NAME%%CONTINUE%
 ItemDisplay[ETH NMAG]: %GRAY%[%WHITE%eth%GRAY%] %GRAY%%NAME%%CONTINUE%
@@ -591,7 +591,7 @@ ItemDisplay[(clw OR btl OR skr OR 9ar OR 9lw OR 9tw OR 9qr OR 7ar OR 7wb OR 7lw 
 ItemDisplay[(clw OR btl OR skr OR 9ar OR 9lw OR 9tw OR 9qr OR 7ar OR 7wb OR 7lw OR 7tw OR 7qr) SK262>2 !INF NMAG !RW SOCK=3]: %DOT-D6%%GRAY%[%ORANGE%+3 wof%GRAY%] %NAME%{%GRAY%Pattern, Plague, Venom%NL%Chaos, Fury, Malice,%NL%%TAN%Note%WHITE%: Possible RuneWords:}
 
 //Class items
-ItemDisplay[(SOR OR WAND OR SCEPTER OR STAFF OR DRU OR BAR OR NEC OR SIN) !INF NMAG CLVL<31]: %NAME% %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%)%CONTINUE%
+ItemDisplay[(SOR OR WAND OR SCEPTER OR STAFF OR DRU OR BAR OR NEC OR SIN) !INF NMAG CLVL<31]: %NAME%%CONTINUE%
 ItemDisplay[(SOR OR WAND OR (wsp OR 9ws OR 7ws) OR (am5 OR ama OR amf) OR DRU OR BAR OR NEC OR SIN) (MAG OR RARE) !ID]: %NAME%
 
 //Notes for upgrading
@@ -654,8 +654,8 @@ ItemDisplay[(RUNE>0 AND RUNE<33)]: %NAME%{%TAN%Note%WHITE%: Mix %ORANGE%Runes %W
 ItemDisplay[GEM=4]: %NAME%{%TAN%Note%WHITE%: Mix Gems with %GRAY%key %WHITE%to upg}%CONTINUE%
 
 //Sell for gold
-ItemDisplay[(ARMOR OR WEAPON) PRICE>999 DIFF=0 (!ID OR NMAG)]: %NAME% %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%)%CONTINUE%
-ItemDisplay[(ARMOR OR WEAPON) PRICE>9999 DIFF>0 (!ID OR NMAG)]: %NAME% %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%)%CONTINUE%
+ItemDisplay[(ARMOR OR WEAPON) PRICE>999 CLVL<25 (!ID OR NMAG)]: %NAME% %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%)%CONTINUE%
+ItemDisplay[(ARMOR OR WEAPON) PRICE>9999 CLVL>24 (!ID OR NMAG)]: %NAME% %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%)%CONTINUE%
 
 //HIDE EVERYTHING ELSE part 1
 ItemDisplay[(ARMOR OR WEAPON) (MAG OR RARE) CLVL<41]: %NAME%
